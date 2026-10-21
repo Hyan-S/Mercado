@@ -1,0 +1,73 @@
+main {
+  max-width: 860px;
+  margin: 32px auto;
+  padding: 0 16px;
+  font-family: system-ui, sans-serif;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  align-items: end;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+.acoes {
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  background: #1f6feb;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #9bb7e0;
+  cursor: not-allowed;
+}
+
+#btn-cancelar,
+.btn-editar {
+  background: #6e7781;
+}
+
+.btn-excluir {
+  background: #cf222e;
+  margin-left: 6px;
+}
+
+#mensagem {
+  margin: 16px 0 0;
+  color: #1a7f37;
+}
+
+table {
+  width: 100%;
+  margin-top: 24px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
